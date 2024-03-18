@@ -17,5 +17,16 @@ public class Main {
         System.out.println("| " + field[3] + " | " + field[4] + " | " + field[5] + " | ");
         System.out.println("| " + field[6] + " | " + field[7] + " | " + field[8] + " | ");
         System.out.println("------------------------");
+
+        field[0] = "X";
+        field[1] = "X";
+        field[5] = "X";
+
+
+        System.out.println("------------------------" +'\n' +
+                "| " + field[0] + " | " + field[1] + " | " + field[2] + " | " +'\n'+
+                "| " + field[3] + " | " + field[4] + " | " + field[5] + " | " + '\n' +
+                "| " + field[6] + " | " + field[7] + " | " + field[8] + " | " + '\n'+ "------------------------");
+
     }
 }
