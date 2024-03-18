@@ -1,21 +1,13 @@
 public class Style {
 
 
-    private String[] board;
-  /*  public String displayBoard(int number, Game player) {
-
-        System.out.print("" + '\n' +
-                "| = = = = = = = |" + '\n' +
-                "| 1--2--3|" + '\n' +
-                "| 4--5--6|" + '\n' +
-                "| 7--8--9|" + '\n' +
-                "| = = = = = = = |");
-
-        String player1 = "X";
-        String player2 = "O";
+        public String displayBoard(int number, String[] field, String player) {
+            field[number] = player;
+        return "------------------------" +'\n' +
+                "| " + field[0] + " | " + field[1] + " | " + field[2] + " | " +'\n'+
+                "| " + field[3] + " | " + field[4] + " | " + field[5] + " | " + '\n' +
+                "| " + field[6] + " | " + field[7] + " | " + field[8] + " | " + '\n'+ "------------------------";
 
 
     }
-
-   */
 }
