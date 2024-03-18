@@ -42,7 +42,9 @@ public class Game {
         System.out.println("player " + player);
         System.out.println("choose your characters placement");
         answer = sc.nextInt();
-        if (!field[answer-1].equals("X") || !field[answer-1].equals("O")){
+        if (!field[answer-1].equals("X") && player.equals("O")){
+            field[answer-1] = player;
+        }if (!field[answer-1].equals("O") && player.equals("X")){
             field[answer-1] = player;
         }
         for (int i = 0; i < field.length; i++) {
