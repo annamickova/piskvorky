@@ -1,7 +1,7 @@
 public class Style {
 
 
-    public String display(int number, Game player) {
+  /*  public String display(int number, Game player) {
 
         System.out.print("" + '\n' +
                 "| = = = = = = = |" + '\n' +
@@ -15,4 +15,6 @@ public class Style {
 
 
     }
+
+   */
 }
