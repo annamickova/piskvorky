@@ -5,9 +5,11 @@ public class Game {
 
     private String[] field;
     private String player;
+    private Style style;
 
     public Game() {
         this.field = new String[9];
+        this.style = new Style();
         init();
     }
 
@@ -33,7 +35,7 @@ public class Game {
     }
 
     public String intro(){
-        return "welcome in tic tac toe";
+        return "welcome in tic tac toe" + style.boardEmpty();
     }
 
     public void choose(String player){
@@ -42,6 +44,7 @@ public class Game {
         System.out.println("player " + player);
         System.out.println("choose your characters placement");
         answer = sc.nextInt();
+        System.out.println(style.displayBoard(answer-1, field, player));
         if (!field[answer-1].equals("X") && player.equals("O")){
             field[answer-1] = player;
         }if (!field[answer-1].equals("O") && player.equals("X")){
@@ -55,6 +58,7 @@ public class Game {
 
     public void start(){
        System.out.println(intro());
+
        while (!victory("X", "O")){
            try {
                choose("X");
